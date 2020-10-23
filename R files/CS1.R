@@ -1,7 +1,7 @@
 #reading files
-cust <- read.csv("R case study 1 (Retail)\\R case study 1 (Retail)\\Customer.csv")
-tran <- read.csv("R case study 1 (Retail)\\R case study 1 (Retail)\\transactions.csv")
-prod <- read.csv("R case study 1 (Retail)\\R case study 1 (Retail)\\prod_cat_info.csv")
+cust <- read.csv("Customer.csv")
+tran <- read.csv("transactions.csv")
+prod <- read.csv("prod_cat_info.csv")
 
 #merging with merge
 custran <- merge(cust, tran, by.x = 'customer_Id', by.y = 'cust_id')
