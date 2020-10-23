@@ -1,7 +1,7 @@
 
-customer <- read.csv("R case study 2 (Credit card)\\R case study 2 (Credit card)\\Customer Acqusition.csv")
-repayment <- read.csv('R case study 2 (Credit card)\\R case study 2 (Credit card)\\Repayment.csv')
-spend  <- read.csv('R case study 2 (Credit card)\\R case study 2 (Credit card)\\spend.csv')
+customer <- read.csv("Customer Acqusition.csv")
+repayment <- read.csv('Repayment.csv')
+spend  <- read.csv('spend.csv')
 
 #Replacing values less than 18 with mean
 customer$Age[customer$Age<18] <- mean(customer$Age)
